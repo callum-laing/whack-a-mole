@@ -16,13 +16,15 @@
 		margin-top: 250px;
 	}
 
-	button {
+	button,
+	a {
 		font-size: 2rem;
 		background-color: transparent;
 		padding: 10px;
 	}
 
-	button:hover {
+	button:hover,
+	a:hover {
 		background-color: white;
 		cursor: pointer;
 	}

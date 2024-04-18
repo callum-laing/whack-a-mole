@@ -1,8 +1,8 @@
 <script>
 	import './global.css';
-	import Game from '../components/Game.svelte';
+	import Start from '../components/Start.svelte';
 </script>
 
 <main>
-	<Game />
+	<Start />
 </main>

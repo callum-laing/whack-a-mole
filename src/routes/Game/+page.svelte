@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
-	import Fleur from '../routes/fleur.jpg';
+	import Fleur from '../../routes/duck.jpg';
 
 	const moles = Array.from({ length: 9 }, () => ({ visible: false, hit: false }));
 	const score = writable(0);
@@ -43,7 +43,7 @@
 	});
 </script>
 
-<h1 id="game-title">Whack-A-Mole</h1>
+<h1 id="game-title">Whack-A-Duck</h1>
 <span>
 	<p class="time">Time left: <span aria-live="assertive">{$timeLeft}</span></p>
 	<p class="score">Score: <span aria-live="assertive">{$score}</span></p>
