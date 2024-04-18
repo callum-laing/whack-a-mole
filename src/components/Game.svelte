@@ -43,10 +43,10 @@
 	});
 </script>
 
-<h1 id="game-title">Whack-a-Mole</h1>
+<h1 id="game-title">Whack-A-Mole</h1>
 <span>
-	<p>Time left: <span aria-live="assertive">{$timeLeft}</span></p>
-	<p>Score: <span aria-live="assertive">{$score}</span></p>
+	<p class="time">Time left: <span aria-live="assertive">{$timeLeft}</span></p>
+	<p class="score">Score: <span aria-live="assertive">{$score}</span></p>
 </span>
 
 <div aria-labelledby="game-title" aria-live="polite">
@@ -71,9 +71,20 @@
 		font-size: 2.5em;
 	}
 
-	p {
+	.score,
+	.time {
+		position: absolute;
+		margin-left: 300px;
 		font-size: 1.5em;
 	}
+
+	.score {
+		top: 150px;
+	}
+	.time {
+		top: 100px;
+	}
+
 	div {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
